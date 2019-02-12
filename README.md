@@ -36,7 +36,7 @@ package explain:
 │   │   ├── SingletonEnum.java
 │   │   ├── SingletonTest.java
 │   │   └── Sun.java
-│   └── strategy           (also include command pattern)
+│   └── strategy           					(also include command pattern)
 │       ├── attack
 │       │   ├── IAttack1.java
 │       │   ├── IAttack2.java
@@ -86,7 +86,7 @@ Thread/
 ├── cyclicbarrier
 │   ├── CyclicBarrierTest.java
 │   └── Seckill.java
-├── lock                   ()
+├── lock                   					  
 │   ├── Account.java
 │   ├── Deposit.java
 │   ├── DepositWithdraw.java
