@@ -14,6 +14,8 @@ import pattern.pattern.strategy.attack.INormalAttack;
 public abstract class Role {
 
 	protected String name;
+	protected int attack_value;
+	protected int defense_value;
 	protected IAttack1 attack1;
 	protected IAttack2 attack2;
 	protected IAttack3 attack3;
@@ -39,6 +41,33 @@ public abstract class Role {
 		return this;
 	}
 	
+	public Role setName(String name) {
+		this.name = name;
+		return this;
+	}
+
+	public Role setAttack_value(int attack_value) {
+		this.attack_value = attack_value;
+		return this;
+	}
+
+	public Role setDefense_value(int defense_value) {
+		this.defense_value = defense_value;
+		return this;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public int getAttack_value() {
+		return attack_value;
+	}
+
+	public int getDefense_value() {
+		return defense_value;
+	}
+
 	public void attack1() {
 		attack1.attack1();
 	}

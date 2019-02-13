@@ -9,6 +9,8 @@ package pattern.pattern.strategy.roles.libai;
 public class Base {
 	
 	public static final String NAME = "李白";
+	public static final int ATTACK = 20; // default attack value
+	public static final int DEFENSE = 5; // default defense value
 
 	private static int moveMax = 3;
 	public static boolean move() {

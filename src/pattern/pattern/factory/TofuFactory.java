@@ -3,7 +3,7 @@ package pattern.pattern.factory;
 import java.util.Map;
 
 import pattern.pattern.factory.tofu.Tofu;
-import pattern.pattern.factory.util.Util;
+import pattern.pattern.util.Util;
 
 /**
  *
@@ -16,7 +16,7 @@ public class TofuFactory {
 	private static Map<String,Tofu> tofuMaps;
 
 	static {
-		tofuMaps = Util.getTofuTypes("TofuTypes.properties");
+		tofuMaps = Util.getProps(tofuMaps, TofuFactory.class,"TofuTypes.properties");
 	}
 	
 	public static Tofu getTofu(String type) {

@@ -18,6 +18,7 @@ import pattern.pattern.factory.tofu.Tofu;
  */
 public class Util {
 
+	@Deprecated
 	public static Map<String,Tofu> getTofuTypes(String profileName){
 		Map<String,Tofu> tofuMaps = new HashMap<String,Tofu>();
 		Properties p = new Properties();

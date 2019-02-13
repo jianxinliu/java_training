@@ -1,5 +1,7 @@
 package pattern.pattern.strategy;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 import pattern.pattern.strategy.command.Attack1;
@@ -7,7 +9,7 @@ import pattern.pattern.strategy.command.Attack2;
 import pattern.pattern.strategy.command.Attack3;
 import pattern.pattern.strategy.command.Command;
 import pattern.pattern.strategy.command.NormalAttack;
-import pattern.pattern.strategy.roles.HerosUtil;
+import pattern.pattern.util.Util;
 
 /**
  *
@@ -23,7 +25,10 @@ public class CommandPanel {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("which hero do you want?");
 		String heroWant = sc.nextLine();
-		currentHero = HerosUtil.getHeros("roles/heros.properties").get(heroWant);
+		
+		Map<String,Role> maps = new HashMap<String,Role>();
+		Util.getProps(maps,CommandPanel.class,"roles/heros.properties");
+		currentHero = maps.get(heroWant);
 		
 		while(sc.hasNext()) {
 			String cmd = sc.nextLine();
