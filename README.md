@@ -108,15 +108,16 @@ Thread/
 └── ThreadTest.java
 ```
 package **io/nio** is something about nio,implements a simple HTTP Server,can access the request from browser. 
+
 ```
 nio/my/
-├── bean								(server base bean)
+├── bean			(server base bean)
 │   ├── HttpMethod.java
 │   ├── RequestBean.java
 │   ├── ResponseBean.java
 │   └── StatuCode.java
-├── HttpClient.java						(http client)
-├── HttpServer.java						(http server,can access the request from browser)
+├── HttpClient.java		(http client)
+├── HttpServer.java		(http server,can access the request from browser)
 ├── resource.txt
 └── Test.java
 ```
