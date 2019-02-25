@@ -87,7 +87,7 @@ Thread/
 ├── cyclicbarrier
 │   ├── CyclicBarrierTest.java
 │   └── Seckill.java
-├── lock                   					  
+├── lock
 │   ├── Account.java
 │   ├── Deposit.java
 │   ├── DepositWithdraw.java
@@ -104,6 +104,14 @@ Thread/
 │   ├── java.txt
 │   ├── JxSemaphore.java
 │   └── SemaphoreTest.java
+├── singleton
+│   ├── lazyinit
+│   │   ├── SingletonLazy2.java
+│   │   ├── SingletonLazySync3.java
+│   │   ├── SingletonLazySyncDCL4.java
+│   │   └── SingletonSyncDCLVolatile5.java
+│   ├── Singleton1.java
+│   └── Test.java
 ├── ThreadTest2.java
 └── ThreadTest.java
 ```
