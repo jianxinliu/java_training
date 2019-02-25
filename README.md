@@ -1,7 +1,8 @@
 # something practice
 
 package explain:
-- package pattern is something about design pattern,i implements some examples for better comprehension.
+
+- package **pattern** is something about design pattern,i implements some examples for better comprehension.
 
 ```
 ├── pattern
@@ -65,7 +66,7 @@ package explain:
 │       └── RoleTest.java
 ```
 
-- package Thread is something about concurrent,also some examples here.
+- package **Thread** is something about concurrent,also some examples here.
 
 ```
 Thread/
@@ -105,4 +106,17 @@ Thread/
 │   └── SemaphoreTest.java
 ├── ThreadTest2.java
 └── ThreadTest.java
+```
+package **io/nio** is something about nio,implements a simple HTTP Server,can access the request from browser. 
+```
+nio/my/
+├── bean								(server base bean)
+│   ├── HttpMethod.java
+│   ├── RequestBean.java
+│   ├── ResponseBean.java
+│   └── StatuCode.java
+├── HttpClient.java						(http client)
+├── HttpServer.java						(http server,can access the request from browser)
+├── resource.txt
+└── Test.java
 ```
