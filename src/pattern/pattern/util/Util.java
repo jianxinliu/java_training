@@ -14,11 +14,11 @@ import java.util.Properties;
 public class Util {
 
 	/**
-	 * generic properties reader
-	 * @param maps properties map
-	 * @param clazz control panel class(where need the properties)
-	 * @param profileName profile name
-	 * @return properties map
+	 * 通用的获取配置文件对象的方法，适用于配置文件的值是类路径的情况
+	 * @param maps 存放配置文件内容的 Map ，value 是新创建的对象
+	 * @param clazz 创建对象的类型
+	 * @param profileName 配置文件路径
+	 * @return properties map 对传进来的 map 进行赋值后返回
 	 */
 	public static <T> Map<String,T> getProps(Map<String,T> maps,Class<?> clazz,String profileName){
 		Properties p = new Properties();
