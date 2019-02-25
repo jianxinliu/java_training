@@ -13,11 +13,11 @@
 			<artifactId>netty</artifactId>
 			<version>4.1.24</version>
 		</dependency> -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>io.vertx</groupId>
 			<artifactId>vertx-core</artifactId>
 			<version>3.6.3</version>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
